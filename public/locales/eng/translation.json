@@ -6,9 +6,11 @@
         "link3":"About brand",
         "link4":"Contacts"
     },
-    "home":{
-        "firstScreen":{
-            "title":"asfasgagsgsa"
+    "hero":{
+        "firstSection":{
+            "title":"New arrivals this season",
+            "text":"Sophisticated combinations and velvet tones are what you've been looking for this season. Time to explore",
+            "btn":"Open shop"
         }
     }
     

@@ -1,0 +1,120 @@
+.hero{
+    margin-top: 40px;
+    
+    &__sectionOne{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        width:47%;
+        // flex-basis: calc(527/1100*100%);
+        justify-content: center;
+        align-items: flex-start;
+     
+    }
+    // &__images{
+      
+    // }
+    
+    &__rectangle{
+        position: absolute;
+        width:100vw;
+        height:100vh;
+        z-index: -999;
+        bottom: -46px;
+        left:-60px;
+        background-color: #F1EADC;
+    }
+
+    &__title{
+        /* Заголовок h1 */
+         
+         font-family: 'Raleway';
+         font-style: normal;
+         font-weight: 500;
+         font-size: 55px;
+         line-height: 110%;
+         /* or 61px */
+
+         letter-spacing: 0.02em;
+
+         color: #000000;         
+           
+          
+    }
+
+    &__btn{
+        display:flex;
+        align-items: center;
+        height:67px;
+        margin: 52px 0 0 39.9px;
+        cursor: pointer;
+        
+        &--img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width:67px;
+            background-color: rgba(110, 156, 159, 0.1);
+        }
+        &--text{
+            display: flex;
+            padding: 22px 50px 22px 50px;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            background: #6E9C9F;
+            color:#FFFFFF
+        }
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 138.9%;
+        /* identical to box height, or 24px */
+
+        text-align: center;
+        letter-spacing: 0.02em;
+
+        color: #FFFFFF;
+    }
+
+    &__text{
+        width:340px;
+        margin-top: 45px;
+        /* Крупный текст */
+
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+        /* or 28px */
+
+        text-align: right;
+        letter-spacing: 0.02em;
+
+        color: #000000;
+    }
+
+    &__images{
+        position: relative;
+        
+        .hero__image2{
+            position: absolute;
+            top:378px;
+            left:-130px;
+            bottom:0;
+        }
+        .hero__image1{
+            position: absolute;
+            top:114px;
+            left:310px
+            
+        }
+    }
+}

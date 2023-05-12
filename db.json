@@ -1,19 +1,61 @@
 {
-  "posts": [
+  "users": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "name": "Akai",
+      "data": {
+        "email": "asfasf@gmail.com",
+        "login": "safasfas",
+        "number": "fasf",
+        "password": "asfasfasfasf"
+      },
+      "email": "asfasf@gmail.com",
+      "login": "safasfas",
+      "number": "fasf",
+      "password": "asfasfasfasf"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "email": "akaichiksafasdfg@gmail.com",
+      "password": "$2a$10$Dq./P9fsbRhMVCOMOVV8rOARbBUKWbih5KIlqpfTuXU6hqvkj0bnu",
+      "login": "dffdh",
+      "number": "674564353",
+      "id": 2
+    },
+    {
+      "email": "akai@mail.ru",
+      "password": "$2a$10$xaEfFtDcwlCTmNPpXarmA.hqLXcrRJBW2B2v0BgkSlAbyVvXsspOy",
+      "login": "akai",
+      "number": "996707016314",
+      "id": 3
+    },
+    {
+      "email": "Ainazik@mail.ru",
+      "password": "$2a$10$9WpY/3Cscn/fYm7//hy7XeODEmeCQI8TaiKJZ/WsWIyy97XXkpubS",
+      "login": "safasf",
+      "number": "asfasfasfa",
+      "id": 4
+    },
+    {
+      "email": "saf@mail.ru",
+      "password": "$2a$10$.LKSSjrRpQQHf7ZFPErZMeHmfeZKSHbySCirKa8b0I/kHyOJtAiwK",
+      "login": "safasf",
+      "number": "asfasfasfa",
+      "id": 5
+    },
+    {
+      "email": "poli@mail.ru",
+      "password": "$2a$10$9c7xZRQg6bqREv5M6pJAGOs1tbvw.ww4o9SBr2QR71pPShYvbRTlu",
+      "login": "gdsfg",
+      "number": "sdgadgasd",
+      "id": 6
+    },
+    {
+      "email": "ronaldo@mail.ru",
+      "password": "$2a$10$FNZOxiTTjyKIPpjBkSKpcesh77WvqOPgNPlmPXk.IYTKHTf/3jvB2",
+      "login": "ronaldo",
+      "number": "70707070",
+      "orders": [],
+      "id": 7
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

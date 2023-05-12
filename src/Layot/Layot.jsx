@@ -9,17 +9,27 @@ import { Header } from "../components/Header/Header";
 import { Footer } from "../components/Footer/Footer";
 import { Brands } from "../pages/Brands/Brands";
 import { NotFound } from "../pages/NotFound/NotFound";
+import { Login } from "../pages/Login/Login";
+import { Register } from "../pages/Register/Register";
 
 export const Layot=()=>{
     const location=useLocation();
     return (
         <>
-            <Header />
+            {
+               location.pathname != "/login" && location.pathname != "/register" 
+              
+               ? <Header  /> :""
+            }
+
             <Routes>
                  <Route  path="/" element={<Home />}/>
                  <Route  path="/contact" element={<Contact />}/>
-                 <Route  path="/shop" element={<Shop />}/>
+                 <Route  path="/shop" element={<Shop />}/> 
                  <Route  path="/brands" element={<Brands />}/>
+                 <Route  path="/login" element={<Login />}/>
+                 <Route  path="/register" element={<Register />}/>
+
                  <Route  path="*" element={<NotFound />}/>
             </Routes>
           {

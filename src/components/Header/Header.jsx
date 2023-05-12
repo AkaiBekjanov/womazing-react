@@ -3,11 +3,13 @@ import logo from '../../img/header/logo.png'
 import phone from '../../img/header/phone.png'
 import bag from '../../img/header/bag.png'
 // 
-import { NavLink} from "react-router-dom";
+import { NavLink,Link} from "react-router-dom";
 import { useTranslation } from 'react-i18next';
+import { CustomContext } from '../../Context';
+import { useContext } from 'react';
 
 export const Header=()=>{
-
+    const {user,logout}=useContext(CustomContext);
     const {t,i18n}=useTranslation();
 
     const changeLanguage=(lang)=>{
@@ -62,6 +64,11 @@ export const Header=()=>{
                 <div className="header__shopping-bag">
                     <img src={bag} alt="bag" />
                 </div>
+
+                
+                {user?.email?.length 
+                                   ? <Link to="/" onClick={logout}>Выйти</Link>
+                                   :   <Link to="/login">Войти</Link>}
 
           </div>
 
