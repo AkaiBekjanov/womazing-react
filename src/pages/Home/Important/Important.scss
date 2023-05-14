@@ -1,0 +1,62 @@
+.important{
+    margin-top: 152px;
+    &__title{
+        
+        /* Заголовок h2 */
+        
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 110%;
+        /* identical to box height, or 44px */
+
+        letter-spacing: 0.02em;
+
+        color: #000000;
+
+    }
+    &__cards{
+        display: flex;
+        flex-direction: row;
+        margin-top: 92px;
+       
+    }
+}
+.importantCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap:30px;
+    &__title{
+        /* Заголовок h3 */
+
+         font-family: 'Raleway';
+         font-style: normal;
+         font-weight: 500;
+         font-size: 25px;
+         line-height: 140%;
+         /* identical to box height, or 35px */
+
+         letter-spacing: 0.02em;
+
+         color: #000000;
+
+    }
+
+    &__text{
+        /* Обычный текст */
+
+         font-family: 'Raleway';
+         font-style: normal;
+         font-weight: 500;
+         font-size: 17px;
+         line-height: 140%;
+         /* or 24px */
+         
+         letter-spacing: 0.02em;
+
+         color: #000000;
+    }
+}

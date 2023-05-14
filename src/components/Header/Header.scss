@@ -88,4 +88,16 @@
     &__shopping-bag{
         cursor: pointer;
     }
+    &__language-btns{
+        display: flex;
+        gap:15px;
+           button{
+            padding:5px;
+            border: none;
+            background-color: #FFF;
+            cursor: pointer;
+           }
+            
+     
+    }
 }

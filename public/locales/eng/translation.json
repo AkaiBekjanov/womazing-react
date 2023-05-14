@@ -12,6 +12,27 @@
             "text":"Sophisticated combinations and velvet tones are what you've been looking for this season. Time to explore",
             "btn":"Open shop"
         }
-    }
+    },
+    "collection":{
+        "title":"New collection"
+    },
+    "important":{
+        "title":"What is important for us",
+        "first":{
+           "title":"Quality",
+           "text":"Our professionals work on the best equipment for sewing clothes of unprecedented quality"
+       
+        },
+        "second":{
+           "title":"Speed",
+           "text":"Thanks to the well-established system at Womazing, we can sew up to 20 products in our own workshops"
+       
+        },
+        "three":{
+           "title":"Responsibility",
+           "text":"We care about people and the planet. Waste-free production and comfortable working conditions - that's what Womazing is all about"
+       
+        }
+   }
     
 }

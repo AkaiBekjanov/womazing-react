@@ -49,15 +49,19 @@ export const Header=()=>{
                 <div className="header__contact">
                     <img src={phone} alt="phone" />
                      <a href="tel:+7 (495) 823-54-12">+7 (495) 823-54-12</a>
-                     <div>
-                        <span onClick={()=>changeLanguage("ru")}>
+                     
+                        
+                    
+                </div>
+
+                <div className='header__language-btns'>
+                       <button  onClick={()=>changeLanguage("ru")}>
                             RU
-                        </span>
-                        -------
-                        <span  onClick={()=>changeLanguage("eng")}>
+                        </button>
+                       
+                        <button  onClick={()=>changeLanguage("eng")}>
                             ENG
-                        </span>
-                    </div>
+                        </button>
                 </div>
                 
 
