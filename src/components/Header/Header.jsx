@@ -55,7 +55,7 @@ export const Header=()=>{
                 </div>
 
                 <div className='header__language-btns'>
-                       <button  onClick={()=>changeLanguage("ru")}>
+                       <button   onClick={()=>changeLanguage("ru")}>
                             RU
                         </button>
                        

@@ -14,7 +14,20 @@
         }
     },
     "collection":{
-        "title":"New collection"
+        "btn":"Open shop",
+        "title":"New collection",
+        "first":{
+            "title":"Футболка USA",
+            "price":129
+        },
+        "second":{
+            "title":"Купальник Glow",
+            "price":129
+        },
+        "three":{
+            "title":"Свитшот Sweet Shot",
+            "price":129
+        }
     },
     "important":{
         "title":"What is important for us",

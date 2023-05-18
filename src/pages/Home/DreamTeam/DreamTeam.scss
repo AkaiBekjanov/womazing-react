@@ -1,0 +1,103 @@
+.team{
+    margin-top: 130px;
+    &__title{
+        margin-bottom: 92px;
+       /* Заголовок h2 */
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 110%;
+       /* identical to box height, or 44px */
+        letter-spacing: 0.02em;
+        color: #000000;
+   }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap:124px;
+   }
+    &__right{
+        width: calc(50% - 62px);
+        &__title{
+            margin-bottom: 28px;
+           /* Заголовок h2 */
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 110%;
+           /* identical to box height, or 44px */
+            letter-spacing: 0.02em;
+            color: #000000;
+       }
+        &__text{
+            margin-bottom: 28px;
+           /* Обычный текст */
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 140%;
+           /* or 24px */
+            letter-spacing: 0.02em;
+            color: #000000;
+       }
+        &__btn{
+            text-emphasis: none;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 140%;
+           /* identical to box height, or 24px */
+            letter-spacing: 0.02em;
+           /* CTA */
+            color: #6E9C9F;
+            text-decoration: none;
+       }
+   }
+}
+.swiper-button-prev::after {
+    content: "←";
+    
+    font-size: 24px;
+    color: #000;
+}
+.swiper-button-next::after {
+    content: "→";
+    
+    font-size: 24px;
+    color: #000;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.swiper {
+    
+    width: 100%;
+    height: 100%;
+    padding: 0 ;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+   /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}

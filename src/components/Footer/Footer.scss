@@ -1,0 +1,106 @@
+.footer{
+    margin-top: 130px;
+    padding:100px 0;
+    background-color: #F1EADC;
+    
+    
+    &__inner{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    &__logo{
+         display: flex;
+         align-items: center;
+         gap:14.47px;
+         cursor: pointer;
+        h1{
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            /* identical to box height */
+   
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+   
+            color: #000000;
+        }
+         
+    }
+
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        gap: 45px;
+        
+    }
+    &__item{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 140%;
+        /* identical to box height, or 21px */
+
+        letter-spacing: 0.02em;
+
+        color: #000000;
+        list-style: none;
+        a{
+            text-decoration: none;
+            color:inherit;
+            &.active{
+                color:#6E9C9F
+            }
+        }
+       
+    }
+
+    &__contact{
+        display: flex;
+        align-items: center;
+       
+        gap:15.5px;
+        cursor: pointer;
+       
+        a{
+             text-decoration: none;
+          
+             color: #000000;  
+             font-family: 'Raleway';
+             font-style: normal;
+             font-weight: 400;
+             font-size: 15px;
+             line-height: 140%;
+             /* identical to box height, or 21px */
+
+             letter-spacing: 0.02em;
+
+           
+             
+             
+                      
+        }
+    }
+
+    &__shopping-bag{
+        cursor: pointer;
+    }
+    &__language-btns{
+        display: flex;
+        gap:15px;
+           button{
+            padding:5px;
+            border: none;
+            background-color: #FFF;
+            cursor: pointer;
+           }
+            
+     
+    }
+}
