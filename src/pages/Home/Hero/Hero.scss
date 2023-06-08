@@ -9,10 +9,11 @@
     &__content{
         display: flex;
         flex-direction: column;
-        width:47%;
+        max-width:47%;
         // flex-basis: calc(527/1100*100%);
         justify-content: center;
         align-items: flex-start;
+       
      
     }
     // &__images{
@@ -84,21 +85,13 @@
     }
 
     &__text{
-        width:340px;
-        margin-top: 45px;
-        /* Крупный текст */
 
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 400;
+        margin-top: 35px;
+    
         font-size: 20px;
         line-height: 140%;
-        /* or 28px */
-
-        text-align: right;
-        letter-spacing: 0.02em;
-
-        color: #000000;
+        text-align: left;
+   
     }
 
     &__images{
@@ -117,4 +110,97 @@
             
         }
     }
+}
+
+@media (max-width:1200px){
+    .hero{
+        &__images{
+            max-width: 100%;
+            position: relative;
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+            .hero__image2{
+                left:-80px;
+             
+            }
+           
+        }
+    }
+}
+@media (max-width:1024px){
+    .hero{
+        &__title{
+            font-size: 37px;
+        }
+        
+        &__text{
+            width:100%;
+          
+            font-size: 20px;
+           
+        }
+    
+        &__btn{
+           
+            margin: 42px 0 0 0px;
+            &--text{
+             
+                padding: 12px  25px;
+                
+              
+            }
+            
+        }
+        &__images{
+            max-width: 100%;
+            position: relative;
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+            .hero__image2, .hero__image1{
+                display: none;
+             
+            }
+           
+        }
+    }
+            
+}
+@media (max-width:768px){
+
+ 
+}
+@media (max-width:568px){
+  .hero{
+  
+    &__content{
+        max-width:100%;
+        
+        justify-content: center;
+    }
+    &__btn{
+     
+        align-self: center;
+        
+    }
+    &__images
+    {
+        display: none;
+     
+    }
+    &__title{
+        margin-top: 40px;
+        
+        text-align: center;
+    }
+    
+    &__text{
+        width: 100%;
+        text-align: center;
+       
+    }
+  }
 }

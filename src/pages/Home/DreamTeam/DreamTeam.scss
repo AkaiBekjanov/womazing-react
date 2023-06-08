@@ -101,3 +101,17 @@
     -webkit-align-items: center;
     align-items: center;
 }
+
+
+@media (max-width:568px){
+  .team{
+    &__content{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+   }
+   &__right{
+    margin-top: 40px;
+    width: 100%;}
+  }
+}

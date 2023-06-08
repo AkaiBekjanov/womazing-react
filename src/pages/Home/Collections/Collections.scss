@@ -144,3 +144,34 @@ letter-spacing: 0.02em;
 color: #998E78;
     }
 }
+
+@media (max-width:1200px){
+   .collections{
+    &__imgs{
+       
+        gap:25px;
+        max-width: 100%;
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+   }
+      
+  }
+
+
+  @media (max-width:768px){
+   
+    
+  }
+  @media (max-width:568px){
+   
+    .collections{
+        &__imgs{
+           
+            flex-direction: column;
+        }
+       }
+  }
+  

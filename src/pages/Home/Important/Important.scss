@@ -19,6 +19,7 @@
     &__cards{
         display: flex;
         flex-direction: row;
+        column-gap: 35px;
         margin-top: 92px;
        
     }
@@ -59,4 +60,14 @@
 
          color: #000000;
     }
+}
+
+@media (max-width:568px){
+   .important{
+    &__cards{
+       flex-direction: column;
+       row-gap: 30px;
+       
+    }
+   }
 }

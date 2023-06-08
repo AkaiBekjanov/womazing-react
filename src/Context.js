@@ -11,6 +11,41 @@ export const Context=(props)=>{
 
     const [user,setUser]=useState({email:""});
     const [cart, setCart] = useState([]);
+
+
+    const addCart = (product) => {
+        let idx = cart.findIndex(item => item.id === product.id && item.color === product.color && item.size === product.size);
+        if (idx >= 0) {
+            setCart(cart.map(item => {
+                if (item.id === product.id && item.color === product.color && item.size === product.size) {
+                    return {...item, count: +item.count + +product.count}
+                } else {
+                    return item
+                }
+            }))
+        } else {
+            setCart([...cart, product]);
+        }
+    };
+
+    const updateCart = (id, color, size, count) => {
+        setCart(cart.map(item => {
+            if (item.id === id && item.color === color && item.size === size) {
+                return {...item, count: count}
+            } else {
+                return item
+            }
+        }))
+    };
+
+    const deleteCart = (id, color, size) => {
+        setCart(cart.filter((item) => {
+            return item.id !== id || item.color !== color || item.size !== size
+        }))
+    };
+
+
+
     const navigate=useNavigate();
 
     const [page, setPage] = useState(1);
@@ -19,13 +54,18 @@ export const Context=(props)=>{
 
     const [shop, setShop] = useState([]);
 
+    const [ticket, setTicket] = useState([]);
+
 
     const [color, setColor] = useState("black");
+    const [product, setProduct] = useState();
 
    
 
     const logout=()=>{
         localStorage.removeItem("user");
+        localStorage.removeItem("cart");
+
         setUser({email:""})
     }
    
@@ -42,6 +82,7 @@ export const Context=(props)=>{
         axios.post('http://localhost:5555/register', {...data, orders: []})
             .then((res) => {
                 localStorage.setItem('user', JSON.stringify(res.data.user));
+          
                 setUser(res.data.user);
                 navigate('/')
             })
@@ -51,6 +92,7 @@ export const Context=(props)=>{
         axios.post('http://localhost:5555/login', data)
             .then((res) => {
                 localStorage.setItem('user', JSON.stringify(res.data.user));
+          
                 setUser(res.data.user);
                 navigate('/')
             })
@@ -87,8 +129,18 @@ export const Context=(props)=>{
         setColor,
         color,
         page,
+
         setPage,
-        shop
+        shop,
+        cart,
+        setCart,
+        addCart,
+        deleteCart,
+        updateCart,
+        product, 
+        setProduct,
+        ticket,
+         setTicket
 
     }
 

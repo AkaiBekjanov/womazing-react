@@ -1,0 +1,236 @@
+.product {
+  &__title {
+    margin: 110px 0 26px 0;
+    /* Заголовок h1 */
+
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 110%;
+    /* identical to box height, or 61px */
+
+    letter-spacing: 0.02em;
+
+    color: #000000;
+  }
+
+  &__nav {
+    margin-bottom: 102px;
+    a{
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  &__content {
+    display: flex;
+    gap: 74px;
+  }
+
+  &__img {
+    max-width: 536px;
+  
+
+    img {
+      max-width: 100%;
+      height: auto;
+      
+     
+    }
+  }
+
+  &__price {
+    margin-bottom: 25px;
+    /* Заголовок h2 */
+
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 110%;
+    /* identical to box height, or 44px */
+
+    letter-spacing: 0.02em;
+
+    /* Дополнительный акцент */
+
+    color: #998e78;
+
+    &-sale {
+      font-family: "Raleway";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 110%;
+      /* identical to box height, or 33px */
+
+      letter-spacing: 0.02em;
+      text-decoration-line: line-through;
+
+      color: #9c9c9c;
+    }
+  }
+
+  &__select {
+    margin-bottom: 25px;
+
+    &-title {
+      margin-bottom: 24px;
+      /* Заголовок h4 */
+
+      font-family: "Raleway";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 140%;
+      /* identical to box height, or 28px */
+
+      letter-spacing: 0.02em;
+
+      color: #000000;
+    }
+  }
+
+  &__cart {
+    display: flex;
+    justify-content: space-between;
+    gap: 11px;
+  }
+
+  &__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    text-align: center;
+    width: 68px;
+    height: 68px;
+
+    border: 1px solid #afafaf;
+  }
+
+  &__colors {
+    display: flex;
+    gap: 14px;
+  }
+  &__quantity{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #000000;
+  }
+  &__btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 22px 50px;
+    gap: 10px;
+
+    width: 268px;
+    height: 68px;
+
+    /* CTA */
+
+    background: #6e9c9f;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  &__sizes {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 29px;
+  }
+  &__size {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 41px;
+    height: 41px;
+    border: 1px solid #000000;
+    /* Обычный текст */
+
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 140%;
+    /* identical to box height, or 24px */
+
+    letter-spacing: 0.02em;
+
+    color: #000000;
+    cursor: pointer;
+  }
+  &__color {
+    width: 41px;
+    height: 41px;
+    background-color: red;
+
+    border-radius: 100px;
+    cursor: pointer;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.swiper {
+  &-slide{
+    display: flex;
+    flex-direction: column;
+  }
+  h4 {
+    margin-top: 24px;
+    /* Заголовок h4 */
+
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    /* identical to box height, or 28px */
+
+    letter-spacing: 0.02em;
+
+    color: #000000;
+  }
+  span {
+    /* Цена в карточке товара */
+
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 140%;
+    /* identical to box height, or 21px */
+
+    letter-spacing: 0.02em;
+
+    /* Дополнительный акцент */
+
+    color: #998e78;
+  }
+}
+
+
+@media (max-width:768px){
+ .product{
+  &__content {
+    flex-direction: column;
+  }
+  &__title {
+    font-size: 35px;
+  
+  }
+ }
+ h2{
+   font-size: 20px;
+ }
+
+}
